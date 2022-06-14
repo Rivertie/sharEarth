@@ -1,0 +1,18 @@
+
+server:
+  port: 37979
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    root: info
+
+spring:  datasource:
+    url: jdbc:postgresql://localhost:5432/sharEarth 
+    username: postgres
+    password: post1234 
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:      ddl-auto: none
