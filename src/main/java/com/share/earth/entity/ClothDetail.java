@@ -27,6 +27,17 @@ public class ClothDetail extends AbstractEntity {
 	
 	private boolean isPadded;
 	
-	private int status;
+	private int status; // damaged, clean..
+	
+	private int sholderSize;
+	
+	private int breastSize;
+	
+	private int totalSize;
+	
+	private int armSize;
+	
+	private int armholeSize;
+	
 	
 }
