@@ -29,23 +29,17 @@ public class Cloth extends AbstractEntity {
 	
 	private String tags;
 	
-	private String size;
-	
-	private int sholderSize;
-	
-	private int breastSize;
-	
-	private int totalSize;
-	
-	private int armSize;
-	
-	private int armholeSize;
+	private String size; // S, M, L
 	
 	private Status status;
 
-	private String sharer;
+	@OneToOne 
+	@JoinColumn(name = "sharer_id")
+	private Person sharer;
 	
-	private String renter;
+	@OneToOne
+	@JoinColumn(name = "renter_id")
+	private Person renter;
 	
 	@ManyToOne
 	@JoinColumn(insertable = false, updatable = false)
